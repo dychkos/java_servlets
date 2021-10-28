@@ -1,9 +1,12 @@
 package com.unrgo.javaee_1.model;
 
+import javax.inject.Inject;
+
 public class User {
     private int id;
     private String name;
     private String password;
+    @Inject
     private ROLE role;
 
     public User(){
