@@ -10,10 +10,10 @@ public class ProductService {
     @Inject @EvenID
     private IdGenerator idGenerator;
 
-    public Product createProduct(String title,int price){
+    public Product createProduct(String title,int price,String description){
         int product_id = idGenerator.generate();
 
-        return new Product(product_id,title,price);
+        return new Product(product_id,title,price,description, "http://localhost/img/1");
 
     }
 
